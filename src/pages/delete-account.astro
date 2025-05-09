@@ -1,0 +1,115 @@
+---
+// src/pages/delete-account.astro
+import Layout from "@/layouts/BlogPost.astro"; // Asegúrate que la ruta a tu layout sea correcta
+
+// --- Variables para las props del Layout (AJUSTADAS para esta página) ---
+const pageTitle = "Eliminación de Cuenta - Estimator App";
+const pageDescription =
+  "Instrucciones para solicitar la eliminación de tu cuenta y datos asociados de la aplicación Estimator.";
+// Puedes quitar las tags o usar unas relevantes si quieres
+const pageTags = ["legal", "account", "deletion", "estimator"];
+// Cambia el icono si quieres uno diferente para esta página
+const pageIcon = "beach"; // Icono de papelera, por ejemplo
+// Usa la fecha actual o de creación de esta página
+const publicationDate = new Date("2025-05-05");
+
+// --- Variables usadas DENTRO del contenido ---
+const appName = "Estimator";
+const contactEmail = "ca.alberto.p@gmail.com"; // Asegúrate que este es tu email de contacto
+const processingTime = "7-14 días hábiles"; // Tiempo estimado (puedes ajustarlo)
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  pubDate={publicationDate}
+  tags={pageTags}
+  icon={pageIcon}
+  heroImage="/src/assets/fran.jpg"
+  {/* Puedes omitir o cambiar la heroImage para esta página */}
+>
+  <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+    {/* El Layout probablemente ya pone el H1 con pageTitle */}
+    {/* <h1>{pageTitle}</h1> */}
+
+    <section style="margin-top: 20px;">
+      <p style="margin-bottom: 1.5em;">
+        Esta página proporciona las instrucciones para solicitar la eliminación
+        de tu cuenta y los datos asociados de la aplicación móvil {appName}.
+      </p>
+
+      <h2>Cómo Solicitar la Eliminación</h2>
+      <p style="margin-bottom: 1em;">
+        Para iniciar el proceso de eliminación de tu cuenta, por favor sigue
+        estos pasos:
+      </p>
+      <ol style="list-style: decimal; margin-left: 20px; margin-bottom: 1.5em;">
+        <li style="margin-bottom: 0.5em;">
+          <strong>Envía un Correo Electrónico:</strong> Redacta un nuevo correo electrónico
+          dirigido a nuestra dirección de contacto: <strong
+            ><a
+              href={`mailto:${contactEmail}?subject=Solicitud%20Eliminaci%C3%B3n%20Cuenta%20Estimator`}
+              >{contactEmail}</a
+            ></strong
+          >.
+        </li>
+        <li style="margin-bottom: 0.5em;">
+          <strong>Asunto del Correo:</strong> Asegúrate de que el asunto del correo
+          sea: <code>Solicitud Eliminación Cuenta Estimator</code>. Esto nos
+          ayuda a procesar tu solicitud más rápidamente.
+        </li>
+        <li style="margin-bottom: 0.5em;">
+          <strong>Contenido del Correo:</strong> En el cuerpo del mensaje, por favor
+          indica claramente la **dirección de correo electrónico asociada a la cuenta
+          de {appName} que deseas eliminar**. No es necesario que incluyas tu contraseña
+          u otra información sensible.
+        </li>
+      </ol>
+
+      <h2>Proceso y Datos Afectados</h2>
+      <p style="margin-bottom: 1em;">
+        Una vez recibida tu solicitud, podríamos contactarte a la dirección de
+        correo proporcionada para verificar tu identidad y confirmar la
+        solicitud de eliminación.
+      </p>
+      <p style="margin-bottom: 1em;">
+        Tras la verificación, procederemos a eliminar permanentemente los
+        siguientes datos asociados a tu cuenta de nuestros sistemas activos:
+      </p>
+      <ul style="list-style: disc; margin-left: 20px; margin-bottom: 1.5em;">
+        <li>
+          Tu cuenta de usuario (Email, UID y credenciales de acceso en Firebase
+          Authentication).
+        </li>
+        <li>
+          Tu historial de participación en encuestas (datos en
+          /userParticipation).
+        </li>
+        <li>
+          Las encuestas que hayas creado (datos en /polls asociados a tu UID).
+        </li>
+        <li>
+          Tus votos individuales emitidos (datos en /polls/{"{pollId}"}/votes/{
+            "{userId}"
+          }).
+        </li>
+      </ul>
+
+      <h2>Plazo de Procesamiento</h2>
+      <p style="margin-bottom: 1.5em;">
+        Nos esforzamos por procesar las solicitudes de eliminación verificadas
+        en un plazo aproximado de {processingTime}. Te notificaremos una vez que
+        el proceso se haya completado.
+      </p>
+
+      <h2>Contacto</h2>
+      <p style="margin-bottom: 1em;">
+        Si tienes alguna pregunta sobre el proceso de eliminación de cuenta, no
+        dudes en contactarnos en:
+      </p>
+      <p style="font-weight: bold;">
+        <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+      </p>
+    </section>
+  </div>
+</Layout>

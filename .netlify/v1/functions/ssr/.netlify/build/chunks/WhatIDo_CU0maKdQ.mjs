@@ -1,7 +1,7 @@
 import { a as createComponent, m as maybeRenderHead, d as addAttribute, r as renderComponent, u as unescapeHTML, g as renderTemplate } from './astro/server_Mz-ejFHJ.mjs';
 import 'kleur/colors';
 import { g as getCollection } from './_astro_content_jrKZphon.mjs';
-import { c as $$Icon, b as $$FormattedDate } from './FormattedDate_B0JDN4y7.mjs';
+import { c as $$Icon, b as $$FormattedDate } from './FormattedDate_BVBnW41H.mjs';
 
 const $$WhatIDo = createComponent(async ($$result, $$props, $$slots) => {
   const posts = (await getCollection("blog")).sort(

@@ -1,7 +1,7 @@
 {
     "name": "demo-portfolio",
     "version": "1.0.0",
-    "homepage": "http://offcarlospetit.github.io/portfolio",
+    "homepage": "http://offcarlospetit.github.io",
     "type": "module",
     "private": true,
     "scripts": {

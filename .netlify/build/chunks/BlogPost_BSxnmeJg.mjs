@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderHead, d as addAttribute, u as unescapeHTML, e as renderSlot, f as renderTransition, g as renderTemplate } from './astro/server_Mz-ejFHJ.mjs';
 import 'kleur/colors';
-import { $ as $$BaseHead, a as $$Header, b as $$FormattedDate, c as $$Icon, d as $$Footer } from './FormattedDate_B0JDN4y7.mjs';
+import { $ as $$BaseHead, a as $$Header, b as $$FormattedDate, c as $$Icon, d as $$Footer } from './FormattedDate_BVBnW41H.mjs';
 import { g as getCollection } from './_astro_content_jrKZphon.mjs';
 import '@astrojs/internal-helpers/path';
 import '@astrojs/internal-helpers/remote';

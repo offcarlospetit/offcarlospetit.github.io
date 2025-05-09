@@ -10,9 +10,8 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  output: 'static',
+  site: 'https://offcarlospetit.github.io', // 🔒 debe ser https
+  base: '/', // ✅ para usar en la raíz del dominio
   integrations: [mdx(), sitemap(), tailwind(), icon()],
-  adapter: netlify(),
-  site: 'http://offcarlospetit.github.io',
-  base: '/',
 });

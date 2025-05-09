@@ -1,12 +1,12 @@
 /* empty css                                 */
 import { a as createComponent, m as maybeRenderHead, r as renderComponent, g as renderTemplate, b as renderHead } from '../chunks/astro/server_Mz-ejFHJ.mjs';
 import 'kleur/colors';
-import { c as $$Icon, $ as $$BaseHead, a as $$Header, d as $$Footer } from '../chunks/FormattedDate_B0JDN4y7.mjs';
+import { c as $$Icon, $ as $$BaseHead, a as $$Header, d as $$Footer } from '../chunks/FormattedDate_BVBnW41H.mjs';
 import { S as SITE_DESCRIPTION, a as SITE_TITLE } from '../chunks/consts_DtsrwfYD.mjs';
 import '@astrojs/internal-helpers/path';
 import '@astrojs/internal-helpers/remote';
 import { $ as $$Image } from '../chunks/_astro_assets_BNpS887i.mjs';
-import { $ as $$WhatIDo } from '../chunks/WhatIDo_D5wPBvoL.mjs';
+import { $ as $$WhatIDo } from '../chunks/WhatIDo_CU0maKdQ.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Hero = createComponent(($$result, $$props, $$slots) => {
