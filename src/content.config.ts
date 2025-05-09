@@ -48,7 +48,7 @@ const support = defineCollection({
 });
 
 const marketing = defineCollection({
-    loader: glob({ base: './src/content/apps', pattern: '**/*.{md,mdx}' }),
+    loader: glob({ base: './src/content/marketing', pattern: '**/*.{md,mdx}' }),
     schema: z.object({
         title: z.string(),
         appName: z.string(),
