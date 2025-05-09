@@ -32,4 +32,39 @@ const privacy = defineCollection({
     }),
 });
 
-export const collections = { blog, privacy };
+const support = defineCollection({
+    loader: glob({ base: './src/content/support', pattern: '**/*.{md,mdx}' }),
+    schema: z.object({
+        title: z.string(),
+        appName: z.string(),
+        description: z.string(),
+        contactEmail: z.string().email(),
+        pubDate: z.coerce.date(),
+        icon: z.string().optional(),
+        heroImage: z.string().optional(),
+        tags: z.array(z.string()).optional(),
+        updatedDate: z.coerce.date().optional(),
+    }),
+});
+
+const marketing = defineCollection({
+    loader: glob({ base: './src/content/apps', pattern: '**/*.{md,mdx}' }),
+    schema: z.object({
+        title: z.string(),
+        appName: z.string(),
+        description: z.string(),
+        features: z.array(z.string()),
+        icon: z.string().optional(),
+        pubDate: z.coerce.date(),
+        updatedDate: z.coerce.date().optional(),
+        heroImage: z.string().optional(),
+        tags: z.array(z.string()).optional(),
+    }),
+});
+
+export const collections = {
+    blog,
+    privacy,
+    support,
+    marketing,
+};
