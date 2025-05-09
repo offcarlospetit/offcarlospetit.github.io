@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { a as createComponent, r as renderComponent, g as renderTemplate, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_Mz-ejFHJ.mjs';
 import 'kleur/colors';
-import { $ as $$BlogPost } from '../chunks/BlogPost_BEUS9wo4.mjs';
+import { $ as $$BlogPost } from '../chunks/BlogPost_Cosj2NfW.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Privacy = createComponent(($$result, $$props, $$slots) => {
@@ -145,7 +145,7 @@ Si tienes preguntas o comentarios sobre esta Política de Privacidad, por
 }, "/Users/carlospetit/Documents/Develop/portfolio/src/pages/privacy.astro", void 0);
 
 const $$file = "/Users/carlospetit/Documents/Develop/portfolio/src/pages/privacy.astro";
-const $$url = "/portfolio/privacy";
+const $$url = "/privacy";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,

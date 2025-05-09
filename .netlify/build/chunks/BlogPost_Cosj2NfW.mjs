@@ -1,10 +1,10 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderHead, d as addAttribute, u as unescapeHTML, e as renderSlot, f as renderTransition, g as renderTemplate } from './astro/server_Mz-ejFHJ.mjs';
 import 'kleur/colors';
-import { $ as $$BaseHead, a as $$Header, b as $$FormattedDate, c as $$Icon, d as $$Footer } from './FormattedDate_CdPfgdZ3.mjs';
-import { g as getCollection } from './_astro_content_1c0L6Tgo.mjs';
+import { $ as $$BaseHead, a as $$Header, b as $$FormattedDate, c as $$Icon, d as $$Footer } from './FormattedDate_B0JDN4y7.mjs';
+import { g as getCollection } from './_astro_content_jrKZphon.mjs';
 import '@astrojs/internal-helpers/path';
 import '@astrojs/internal-helpers/remote';
-import { $ as $$Image } from './_astro_assets_DErYiWue.mjs';
+import { $ as $$Image } from './_astro_assets_BNpS887i.mjs';
 /* empty css                         */
 
 const $$Astro = createAstro("http://offcarlospetit.github.io");
@@ -29,7 +29,7 @@ const $$BlogPost = createComponent(async ($$result, $$props, $$slots) => {
     "hover:shadow-pblueHover",
     "hover:shadow-pyellow"
   ];
-  const images = /* #__PURE__ */ Object.assign({"/src/assets/adriana.jpg": () => import('./adriana_CO0JWqaf.mjs'),"/src/assets/euro.jpg": () => import('./euro_D0tLcU5B.mjs'),"/src/assets/fran.jpg": () => import('./fran_BE5DNVC_.mjs'),"/src/assets/hero.png": () => import('./hero_DLvpu_MT.mjs')});
+  const images = /* #__PURE__ */ Object.assign({"/src/assets/adriana.jpg": () => import('./adriana_DXm6Hkvn.mjs'),"/src/assets/euro.jpg": () => import('./euro_DQ6yzT4h.mjs'),"/src/assets/fran.jpg": () => import('./fran_BHnfijGl.mjs'),"/src/assets/hero.png": () => import('./hero_BC78OR5_.mjs')});
   if (!images[heroImage]) throw new Error(`"${heroImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
   const getRandomClass = () => {
     return bgClasses[Math.floor(Math.random() * bgClasses.length)];

@@ -1,4 +1,4 @@
-const hero = new Proxy({"src":"/portfolio/_astro/hero.CDQHw4LG.png","width":315,"height":377,"format":"png"}, {
+const hero = new Proxy({"src":"/_astro/hero.CDQHw4LG.png","width":315,"height":377,"format":"png"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);

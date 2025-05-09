@@ -14,5 +14,5 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind(), icon()],
   adapter: netlify(),
   site: 'http://offcarlospetit.github.io',
-  base: '/portfolio',
+  base: '/',
 });

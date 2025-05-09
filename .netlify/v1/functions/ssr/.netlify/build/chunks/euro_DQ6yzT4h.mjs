@@ -1,4 +1,4 @@
-const euro = new Proxy({"src":"/portfolio/_astro/euro.BjBXwD2A.jpg","width":1920,"height":2507,"format":"jpg"}, {
+const euro = new Proxy({"src":"/_astro/euro.BjBXwD2A.jpg","width":1920,"height":2507,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);

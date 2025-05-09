@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { a as createComponent, r as renderComponent, g as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Mz-ejFHJ.mjs';
 import 'kleur/colors';
-import { $ as $$BlogPost } from '../chunks/BlogPost_BEUS9wo4.mjs';
+import { $ as $$BlogPost } from '../chunks/BlogPost_Cosj2NfW.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$About = createComponent(($$result, $$props, $$slots) => {
@@ -64,7 +64,7 @@ Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperd
 }, "/Users/carlospetit/Documents/Develop/portfolio/src/pages/about.astro", void 0);
 
 const $$file = "/Users/carlospetit/Documents/Develop/portfolio/src/pages/about.astro";
-const $$url = "/portfolio/about";
+const $$url = "/about";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,

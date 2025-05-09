@@ -1,16 +1,16 @@
 /* empty css                                 */
 import { a as createComponent, m as maybeRenderHead, r as renderComponent, g as renderTemplate, b as renderHead } from '../chunks/astro/server_Mz-ejFHJ.mjs';
 import 'kleur/colors';
-import { c as $$Icon, $ as $$BaseHead, a as $$Header, d as $$Footer } from '../chunks/FormattedDate_CdPfgdZ3.mjs';
+import { c as $$Icon, $ as $$BaseHead, a as $$Header, d as $$Footer } from '../chunks/FormattedDate_B0JDN4y7.mjs';
 import { S as SITE_DESCRIPTION, a as SITE_TITLE } from '../chunks/consts_DtsrwfYD.mjs';
 import '@astrojs/internal-helpers/path';
 import '@astrojs/internal-helpers/remote';
-import { $ as $$Image } from '../chunks/_astro_assets_DErYiWue.mjs';
-import { $ as $$WhatIDo } from '../chunks/WhatIDo_DdjDM_-Y.mjs';
+import { $ as $$Image } from '../chunks/_astro_assets_BNpS887i.mjs';
+import { $ as $$WhatIDo } from '../chunks/WhatIDo_D5wPBvoL.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Hero = createComponent(($$result, $$props, $$slots) => {
-  const images = /* #__PURE__ */ Object.assign({"/src/assets/adriana.jpg": () => import('../chunks/adriana_CO0JWqaf.mjs'),"/src/assets/euro.jpg": () => import('../chunks/euro_D0tLcU5B.mjs'),"/src/assets/fran.jpg": () => import('../chunks/fran_BE5DNVC_.mjs'),"/src/assets/hero.png": () => import('../chunks/hero_DLvpu_MT.mjs')
+  const images = /* #__PURE__ */ Object.assign({"/src/assets/adriana.jpg": () => import('../chunks/adriana_DXm6Hkvn.mjs'),"/src/assets/euro.jpg": () => import('../chunks/euro_DQ6yzT4h.mjs'),"/src/assets/fran.jpg": () => import('../chunks/fran_BHnfijGl.mjs'),"/src/assets/hero.png": () => import('../chunks/hero_BC78OR5_.mjs')
 
 });
   return renderTemplate`${maybeRenderHead()}<section class="py-20 flex md:flex-row flex-col px-4 md:px-0 gap-10 md:gap-0"> <div class="flex flex-col gap-6 justify-start items-start md:w-1/2"> <h1 class="text-pblack">Hi, my name is Carlos Petit</h1> <p class="text-6xl font-bold">Duels with the sun are fewer.</p> <p>
@@ -26,7 +26,7 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
 }, "/Users/carlospetit/Documents/Develop/portfolio/src/pages/index.astro", void 0);
 
 const $$file = "/Users/carlospetit/Documents/Develop/portfolio/src/pages/index.astro";
-const $$url = "/portfolio";
+const $$url = "";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
