@@ -82,13 +82,13 @@ const getRandomClass = () => {
               <ul class="flex flex-col gap-2 pt-10 md:pt-0 items-start md:items-end">
                 <p class="md:hidden font-semibold">Related:</p>
                 {
-                  apps.map((post) => {
+                  apps.map((app) => {
                     return (
                       <li class=`text-left rounded-lg border-1 border-black shadow-card group hover:shadow-hover transition  px-2 py-2 ${getRandomClass()}` >
                         <a
-                          href={`/privacy/${post.id}/`}
+                          href={`/marketing/${app.id}/`}
                         >
-                          <h4 >{post.data.title}</h4>
+                          <h4 >{app.data.title}</h4>
                         </a>
                       </li>
                     );
