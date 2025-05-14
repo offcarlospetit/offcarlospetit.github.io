@@ -1,0 +1,46 @@
+---
+title: "Eliminación de Cuenta – Estimator"
+description: "Instrucciones para solicitar la eliminación de tu cuenta y datos asociados de la aplicación Estimator."
+pubDate: "2025-05-14" # Fecha de creación de esta página o una relevante
+appName: "Estimator" # Requerido por tu schema
+contactEmail: "ca.alberto.p@gmail.com" # Requerido si lo añadiste al schema y quieres que sea dinámico
+features: ["Gestión de cuenta", "Privacidad de datos"] # Requerido por tu schema
+tags: ["legal", "cuenta", "eliminacion", "estimator"] # Opcional, ajusta según necesites
+icon: "2" # Opcional, ej. de Material Design Icons
+heroImage: "/src/assets/fran.jpg" # Opcional, o una imagen más relevante
+# updatedDate: "YYYY-MM-DD" # Opcional
+---
+{/* Variables del frontmatter como appName y contactEmail estarán disponibles aquí
+    Astro las inyecta, o si usas un componente, se las pasas.
+    Para uso directo en Markdown/MDX, a veces necesitas un pequeño truco o componente.
+    Pero para la mayoría de los casos, puedes referenciar directamente o usarlas en expresiones.
+    En este caso, los enlaces mailto los construiremos directamente.
+*/}
+
+Esta página proporciona las instrucciones para solicitar la eliminación de tu cuenta y los datos asociados de la aplicación móvil **{frontmatter.appName}**.
+
+## Cómo Solicitar la Eliminación
+Para iniciar el proceso de eliminación de tu cuenta, por favor sigue estos pasos:
+
+1.  **Envía un Correo Electrónico:** Redacta un nuevo correo electrónico dirigido a nuestra dirección de contacto: **<a href={`mailto:<span class="math-inline">\{frontmatter\.contactEmail\}?subject\=Solicitud%20Eliminaci%C3%B3n%20Cuenta%20</span>{encodeURIComponent(frontmatter.appName)}`}>{frontmatter.contactEmail}</a>**.
+2.  **Asunto del Correo:** Asegúrate de que el asunto del correo sea: `Solicitud Eliminación Cuenta {frontmatter.appName}`. Esto nos ayuda a procesar tu solicitud más rápidamente.
+3.  **Contenido del Correo:** En el cuerpo del mensaje, por favor indica claramente la **dirección de correo electrónico asociada a la cuenta de {frontmatter.appName} que deseas eliminar**. No es necesario que incluyas tu contraseña u otra información sensible.
+
+## Proceso y Datos Afectados
+Una vez recibida tu solicitud, podríamos contactarte a la dirección de correo proporcionada para verificar tu identidad y confirmar la solicitud de eliminación.
+
+Tras la verificación, procederemos a eliminar permanentemente los siguientes datos asociados a tu cuenta de nuestros sistemas activos:
+
+- Tu cuenta de usuario (Email, UID y credenciales de acceso en Firebase Authentication).
+- Tu historial de participación en encuestas (datos en `/userParticipation`).
+- Las encuestas que hayas creado (datos en `/polls` asociados a tu UID).
+- Tus votos individuales emitidos (datos en `/polls/{pollId}/votes/{userId}`).
+
+## Plazo de Procesamiento
+Nos esforzamos por procesar las solicitudes de eliminación verificadas en un plazo aproximado de **7-14 días hábiles**. Te notificaremos una vez que el proceso se haya completado.
+{/* La variable processingTime del .astro original ahora está codificada aquí,
+    o podría ser otro campo en el frontmatter si varía por app. */}
+
+## Contacto
+Si tienes alguna pregunta sobre el proceso de eliminación de cuenta, no dudes en contactarnos en:
+**<a href={`mailto:${frontmatter.contactEmail}`}>{frontmatter.contactEmail}</a>**

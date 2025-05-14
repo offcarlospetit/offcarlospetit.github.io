@@ -62,9 +62,27 @@ const marketing = defineCollection({
     }),
 });
 
+
+const safety = defineCollection({
+    loader: glob({ base: './src/content/safety', pattern: '**/*.{md,mdx}' }),
+    schema: z.object({
+        title: z.string(),
+        appName: z.string(),
+        description: z.string(),
+        features: z.array(z.string()),
+        icon: z.string().optional(),
+        pubDate: z.coerce.date(),
+        updatedDate: z.coerce.date().optional(),
+        heroImage: z.string().optional(),
+        tags: z.array(z.string()).optional(),
+        contactEmail: z.string().email().optional(),
+    }),
+});
+
 export const collections = {
     blog,
     privacy,
     support,
     marketing,
+    safety,
 };

@@ -1,0 +1,24 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import SafetyPolicy from "@/layouts/Safety.astro";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  const safety = await getCollection("safety");
+  return safety.map((safety) => ({
+    params: { slug: safety.id },
+    props: safety,
+  }));
+}
+
+export const prerender = true;
+
+type Props = CollectionEntry<"safety">;
+
+const safety = Astro.props;
+const { Content } = await render(safety);
+---
+
+<SafetyPolicy {...safety.data}>
+  <Content />
+</SafetyPolicy>
